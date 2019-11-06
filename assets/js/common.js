@@ -8,6 +8,10 @@ window.onload = function () {
   let wrapRow = document.createElement('div');
   wrapRow.className = 'wrap-keyboard';
   document.body.append(wrapRow);
+  let enRu = document.createElement('div');
+  enRu.className = 'en-ru';
+  enRu.innerHTML = 'Changing keyboard language: press Ctrl Left + Alt Left';
+  document.body.append(enRu);
 
   // information about all buttons
   let keyboard = {
