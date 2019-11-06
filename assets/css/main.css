@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic-ext,latin-ext");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif, arial; }
+
+.wrap-keyboard {
+  border-bottom: 5px solid #dcdcdc;
+  border-right: 5px solid #e6e5e5;
+  margin: 0 auto 50px;
+  width: 800px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 2px #e8e8e8, 10px 10px 20px #e2e2e2, inset 0px 5px 5px rgba(255, 255, 255, 0.8);
+          box-shadow: 5px 5px 2px #e8e8e8, 10px 10px 20px #e2e2e2, inset 0px 5px 5px rgba(255, 255, 255, 0.8); }
+
+.row-key {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.key {
+  height: 40px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.31);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.31);
+  color: #555;
+  text-shadow: 1px 1px 1px #fff;
+  -webkit-flex-basis: 40px;
+      -ms-flex-preferred-size: 40px;
+          flex-basis: 40px;
+  margin: 5px;
+  cursor: pointer; }
+  .key:hover {
+    background-color: #d2d2d2;
+    -webkit-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    transition: background-color 500ms linear; }
+
+#Delete,
+#Tab,
+#CapsLock,
+#Enter,
+#ShiftLeft,
+#ShiftRight,
+#Space,
+#ControlRight,
+#Backspace {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+#ControlRight {
+  -webkit-box-flex: 0.075;
+  -webkit-flex-grow: 0.075;
+      -ms-flex-positive: 0.075;
+          flex-grow: 0.075; }
+
+.key-active {
+  background-color: #d2d2d2;
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.31);
+          box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.31);
+  -webkit-transition: background-color 800ms linear, -webkit-box-shadow 80000ms linear;
+  transition: background-color 800ms linear, -webkit-box-shadow 80000ms linear;
+  -o-transition: background-color 800ms linear, box-shadow 80000ms linear;
+  transition: background-color 800ms linear, box-shadow 80000ms linear;
+  transition: background-color 800ms linear, box-shadow 80000ms linear, -webkit-box-shadow 80000ms linear; }
+
+.wrap-screen {
+  width: 800px;
+  margin: 50px auto 20px;
+  padding: 20px;
+  background-color: #f7f7f7; }
+
+.screen-txt {
+  width: 100%;
+  min-height: 150px;
+  border: 2px solid #e8e8e8;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 2px 2px 10px #eaeaea;
+          box-shadow: inset 2px 2px 10px #eaeaea; }
+  .screen-txt:focus {
+    outline-color: #afafaf; }
